@@ -3,30 +3,380 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Trekking and Travel Agency</title>
+    <meta name="description" content="Explore the Himalayas with Nepal's leading trekking agency. Premium guided treks to Everest, Annapurna, and Langtang with expert guides and unforgettable experiences.">
+    <title>Himalayan Treks Nepal | Premium Mountain Adventures</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Mountain Treks</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <path d="M20 2L35 35H5L20 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                    <circle cx="20" cy="20" r="3" fill="currentColor"/>
+                </svg>
+                <span>Himalayan Treks</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="cta-btn">Book Now</a></li>
             </ul>
-        </nav>
-    </header>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <main>
-        <h2>Explore the Great Outdoors</h2>
-        <p>Your adventure begins here. Join us on an unforgettable journey.</p>
-    </main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Explore the Himalayas Like Never Before</h1>
+            <p class="hero-subtitle">Experience world-class trekking with expert guides through Nepal's most iconic mountains</p>
+            <button class="hero-btn">Start Your Journey</button>
+        </div>
+        <div class="hero-background">
+            <video autoplay muted loop>
+                <source src="assets/hero-mountains.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Mountain Treks. All Rights Reserved.</p>
+    <!-- Trust Section -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="trust-icon">🏔️</div>
+                    <h3>Expert Guides</h3>
+                    <p>Certified mountain guides with 15+ years of experience</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">🛡️</div>
+                    <h3>Safety First</h3>
+                    <p>Comprehensive insurance and emergency protocols</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">⭐</div>
+                    <h3>Premium Accommodation</h3>
+                    <p>Handpicked lodges with comfort and authentic experiences</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">🌍</div>
+                    <h3>Verified Reviews</h3>
+                    <p>4.9/5 rating from 2,400+ satisfied international trekkers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Packages -->
+    <section id="packages" class="featured-packages">
+        <div class="container">
+            <h2>Featured Trekking Packages</h2>
+            <p class="section-subtitle">Choose from our most popular and highly-rated treks</p>
+            
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="assets/everest-base-camp.jpg" alt="Everest Base Camp Trek">
+                        <span class="difficulty">Moderate</span>
+                    </div>
+                    <div class="package-content">
+                        <h3>Everest Base Camp Trek</h3>
+                        <div class="package-meta">
+                            <span>14 Days</span>
+                            <span>4,380m Altitude</span>
+                        </div>
+                        <p>Trek to the legendary base camp of Mount Everest. Experience stunning Himalayan vistas and authentic Sherpa culture.</p>
+                        <div class="package-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="reviews">(456 reviews)</span>
+                        </div>
+                        <div class="package-footer">
+                            <span class="price">From $1,299</span>
+                            <button class="package-btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="assets/annapurna-circuit.jpg" alt="Annapurna Circuit Trek">
+                        <span class="difficulty">Moderate</span>
+                    </div>
+                    <div class="package-content">
+                        <h3>Annapurna Circuit Trek</h3>
+                        <div class="package-meta">
+                            <span>16 Days</span>
+                            <span>5,416m Altitude</span>
+                        </div>
+                        <p>One of the world's best treks. Witness stunning mountain views, diverse ecosystems, and warm hospitality.</p>
+                        <div class="package-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="reviews">(389 reviews)</span>
+                        </div>
+                        <div class="package-footer">
+                            <span class="price">From $1,499</span>
+                            <button class="package-btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="assets/langtang-trek.jpg" alt="Langtang Valley Trek">
+                        <span class="difficulty">Easy</span>
+                    </div>
+                    <div class="package-content">
+                        <h3>Langtang Valley Trek</h3>
+                        <div class="package-meta">
+                            <span>7 Days</span>
+                            <span>3,844m Altitude</span>
+                        </div>
+                        <p>Perfect for first-time trekkers. Explore pristine valleys, alpine forests, and encounter Tamang villages.</p>
+                        <div class="package-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="reviews">(287 reviews)</span>
+                        </div>
+                        <div class="package-footer">
+                            <span class="price">From $599</span>
+                            <button class="package-btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2>Explore Nepal's Iconic Destinations</h2>
+            <p class="section-subtitle">Each destination offers unique experiences and breathtaking mountain views</p>
+            
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <img src="assets/everest-destination.jpg" alt="Mount Everest">
+                    <div class="destination-content">
+                        <h3>Mount Everest</h3>
+                        <p>The world's highest peak at 8,849m. Trek to Base Camp and experience the legendary Sherpa culture.</p>
+                        <a href="#" class="destination-link">Explore →</a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <img src="assets/annapurna-destination.jpg" alt="Annapurna Range">
+                    <div class="destination-content">
+                        <h3>Annapurna Range</h3>
+                        <p>A stunning circuit with diverse landscapes, from subtropical forests to alpine meadows and snow peaks.</p>
+                        <a href="#" class="destination-link">Explore →</a>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <img src="assets/langtang-destination.jpg" alt="Langtang Valley">
+                    <div class="destination-content">
+                        <h3>Langtang Valley</h3>
+                        <p>Hidden gem near Kathmandu. Perfect for quick getaways with stunning views and authentic village experiences.</p>
+                        <a href="#" class="destination-link">Explore →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="about" class="why-choose">
+        <div class="container">
+            <div class="why-content">
+                <h2>Why Choose Himalayan Treks?</h2>
+                <div class="why-list">
+                    <div class="why-item">
+                        <div class="why-number">01</div>
+                        <div class="why-text">
+                            <h4>Expert Local Guides</h4>
+                            <p>Our guides are certified, experienced, and passionate about sharing Nepal's natural and cultural heritage.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-number">02</div>
+                        <div class="why-text">
+                            <h4>Personalized Itineraries</h4>
+                            <p>Customized packages tailored to your fitness level, interests, and schedule.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-number">03</div>
+                        <div class="why-text">
+                            <h4>Sustainable Tourism</h4>
+                            <p>We prioritize environmental conservation and support local communities.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-number">04</div>
+                        <div class="why-text">
+                            <h4>24/7 Support</h4>
+                            <p>Round-the-clock assistance before, during, and after your trek.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Trekkers Say</h2>
+            <p class="section-subtitle">Real stories from adventurers around the world</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"An absolutely unforgettable experience! The guides were knowledgeable, the accommodations were comfortable, and the views were beyond words. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JM</div>
+                        <div>
+                            <strong>James Mitchell</strong>
+                            <span>USA - Everest Base Camp Trek</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Best decision ever! The team made everything smooth from booking to the trek. I felt safe and inspired throughout the journey. Can't wait to trek with them again!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SR</div>
+                        <div>
+                            <strong>Sarah Roberts</strong>
+                            <span>Australia - Annapurna Circuit</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Professional, reliable, and authentic. This company truly cares about their trekkers. The Langtang trek was perfect for my first mountain adventure!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MK</div>
+                        <div>
+                            <strong>Marcus König</strong>
+                            <span>Germany - Langtang Valley Trek</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready for Your Mountain Adventure?</h2>
+            <p>Book your trek today and get exclusive early-bird discounts</p>
+            <div class="cta-buttons">
+                <button class="btn-primary">Start Booking</button>
+                <button class="btn-secondary">Request Custom Trek</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📍 Location</h3>
+                        <p>Thamel, Kathmandu<br>Nepal</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📞 Phone</h3>
+                        <p>+977-1-4234567<br>+977-9841234567</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>💬 WhatsApp</h3>
+                        <a href="https://wa.me/97798412345" class="whatsapp-link">Chat with us</a>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <p>info@himalayantrek.com<br>booking@himalayantrek.com</p>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="form-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Himalayan Treks</h4>
+                    <p>Your gateway to unforgettable mountain adventures in Nepal.</p>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Packing Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Safety Tips</a></li>
+                        <li><a href="#">Visa Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive trek offers</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Himalayan Treks Nepal. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script src="js/scripts.js"></script>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
